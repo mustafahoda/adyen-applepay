@@ -7,7 +7,9 @@ export default function App() {
   return (
     <>
       <h1>Welcome Chi-Adyeners!</h1>
-      <h2>Apple Pay Test!--!!</h2>
+      <h2>Apple Pay Test!!!</h2>
+
+      <div id="dropin-container">Hello</div>
     </>
   );
 }
