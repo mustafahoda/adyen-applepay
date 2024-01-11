@@ -1,7 +1,7 @@
 export const configuration = {
   locale: "en_US", // The shopper's locale. For a list of supported locales, see https://docs.adyen.com/online-payments/web-components/localization-components.
   environment: "test", // When you're ready to accept live payments, change the value to one of our live environments https://docs.adyen.com/online-payments/components-web#testing-your-integration.
-  clientKey: "test_EOBXGJE7SFCF5C7E63JM6ZNXNQX6N7LI", // Your client key. To find out how to generate one, see https://docs.adyen.com/development-resources/client-side-authentication. Web Components versions before 3.10.1 use originKey instead of clientKey.
+  clientKey: "", // Your client key. To find out how to generate one, see https://docs.adyen.com/development-resources/client-side-authentication. Web Components versions before 3.10.1 use originKey instead of clientKey.
   analytics: {
     enabled: true, // Set to false to not send analytics data to Adyen.
   },

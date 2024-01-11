@@ -13,6 +13,7 @@ export default function App() {
   const [formData, setFormData] = useState({
     sessionId: "",
     sessionData: "",
+    clientKey:""
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -24,9 +25,11 @@ export default function App() {
   };
 
   const createAdyenCheckout = async () => {
-    console.log(configuration.configuration);
     configuration.configuration.session.id = formData.sessionId
     configuration.configuration.session.sessionData = formData.sessionData
+    configuration.configuration.clientKey = formData.clientKey
+    console.log(configuration.configuration);
+
 
     const checkout = await AdyenCheckout(configuration.configuration);
     const dropinComponent = checkout
@@ -49,6 +52,16 @@ export default function App() {
       <h2>DropInTest</h2>
 
       <form onSubmit={handleSubmit}>
+      <label>
+          clientKey
+          <input
+            type="text"
+            name="clientKey"
+            value={formData.clientKey}
+            onChange={handleChange}
+          ></input>
+        </label>
+        <br></br>
         <label>
           sessionId
           <input
