@@ -1,5 +1,10 @@
 {
   "dependencies": {
+    "@adyen/adyen-web": "^5.52.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.0",
+    "@mui/styled-engine": "^5.13.2",
     "@types/jest": "^29.5.4",
     "@types/node": "^16.18.68",
     "@types/react": "^16.14.54",
@@ -21,7 +26,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --port 3002",
     "build": "NODE_ENV=production webpack"
-
   },
   "author": "",
   "license": "ISC",
